@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://cincn4ksuosku"]
+
+[ext_resource type="Script" uid="uid://cp67qdogo3p81" path="res://addons/MFAppUI/elements/form_container.gd" id="1_g5r8b"]
+
+[node name="FormContainer" type="Control"]
+layout_mode = 3
+anchor_right = 0.417
+anchor_bottom = 0.417
+offset_right = -100.2
+offset_bottom = -100.2
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_g5r8b")
+
+[node name="matchIcons" type="Control" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Icons" type="GridContainer" parent="matchIcons"]
+layout_mode = 2
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 145.0
+offset_bottom = 145.0
+columns = 4
+metadata/_edit_lock_ = true
+
+[node name="matchForm" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="FormContainer" type="Control" parent="matchForm"]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

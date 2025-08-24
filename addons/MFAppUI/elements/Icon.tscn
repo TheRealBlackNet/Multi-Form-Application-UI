@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bojat6i5hmcm"]
+
+[ext_resource type="Script" uid="uid://cisj88xsn7qwp" path="res://addons/MFAppUI/elements/icon.gd" id="1_nqtoo"]
+[ext_resource type="Texture2D" uid="uid://ccckbk3nimp4r" path="res://addons/MFAppUI/themes/Icon1_32.png" id="1_wp18n"]
+[ext_resource type="FontFile" uid="uid://51wa4y62o8v3" path="res://addons/MFAppUI/themes/Black1TTF.ttf" id="2_nqtoo"]
+
+[node name="Icon" type="Control"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 60.0
+offset_bottom = 60.0
+script = ExtResource("1_nqtoo")
+
+[node name="PanelContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.5
+anchor_bottom = 1.496
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -34.0
+offset_bottom = -37.76
+
+[node name="VFlowContainer" type="VBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/VFlowContainer"]
+custom_minimum_size = Vector2(35, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("1_wp18n")
+expand_mode = 3
+stretch_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VFlowContainer"]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_nqtoo")
+theme_override_font_sizes/font_size = 17
+text = "App 1 Link"
+horizontal_alignment = 1
+autowrap_mode = 1

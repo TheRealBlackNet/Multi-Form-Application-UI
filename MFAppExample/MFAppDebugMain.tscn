@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdnufj382imvr"]
+
+[ext_resource type="Script" uid="uid://edhwlwvvh21g" path="res://MFAppExample/mf_app_debug_main.gd" id="1_6ucb8"]
+[ext_resource type="PackedScene" uid="uid://dfbtknq88qtx3" path="res://addons/MFAppUI/elements/Form.tscn" id="1_d1oey"]
+[ext_resource type="Texture2D" uid="uid://wbbh5api54vi" path="res://addons/MFAppUI/themes/Icon1_16.png" id="2_06dss"]
+[ext_resource type="PackedScene" uid="uid://cincn4ksuosku" path="res://addons/MFAppUI/elements/FormContainer.tscn" id="2_thg5v"]
+
+[node name="MfAppDebugMain" type="Control"]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6ucb8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(150, 150)
+zoom = Vector2(2, 2)
+
+[node name="Icon116" type="Sprite2D" parent="."]
+position = Vector2(284, 283)
+texture = ExtResource("2_06dss")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 299.0
+offset_bottom = 269.0
+
+[node name="FormContainer" parent="Control" instance=ExtResource("2_thg5v")]
+clip_contents = true
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="Form" parent="." instance=ExtResource("1_d1oey")]
+visible = false
+offset_left = 103.0
+offset_top = 227.0
+offset_right = 290.0
+offset_bottom = 292.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 272.0
+offset_right = 207.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 10
+text = "ADD FORM"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 272.0
+offset_right = 104.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 10
+text = "ADD ICON"
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

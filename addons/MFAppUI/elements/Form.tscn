@@ -1,0 +1,184 @@
+[gd_scene load_steps=18 format=3 uid="uid://dfbtknq88qtx3"]
+
+[ext_resource type="Script" uid="uid://cwgmvtwk4vu44" path="res://addons/MFAppUI/elements/form.gd" id="1_h8p3y"]
+[ext_resource type="Texture2D" uid="uid://dydingdf6bhl3" path="res://addons/MFAppUI/themes/Basic_Own_Blank.png" id="2_pkdd1"]
+[ext_resource type="Texture2D" uid="uid://brdpx4hhhw3xi" path="res://addons/MFAppUI/themes/Basic_Own_Form_Buttons.png" id="3_1lvec"]
+[ext_resource type="FontFile" uid="uid://ibpyk1srbt3i" path="res://addons/MFAppUI/themes/Black1TTF_MONO.ttf" id="4_pkdd1"]
+[ext_resource type="Texture2D" uid="uid://cowmnpsxchpus" path="res://addons/MFAppUI/themes/Resize.png" id="4_ynv1e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkdd1"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(0, 0, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynv1e"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(0, 10, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5wyr"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(0, 30, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2i68q"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(0, 20, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1lvec"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(12, 0, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eexcs"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(12, 10, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5o64p"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(12, 30, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m51ua"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(12, 20, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mo76p"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(23, 0, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plssd"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(23, 10, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wa8kg"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(23, 30, 11, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfyfj"]
+atlas = ExtResource("3_1lvec")
+region = Rect2(23, 20, 11, 10)
+
+[node name="Form" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 100.0
+script = ExtResource("1_h8p3y")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_pkdd1")
+region_rect = Rect2(0, 0, 100, 100)
+patch_margin_left = 4
+patch_margin_top = 12
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+
+[node name="btnMin" type="TextureButton" parent="MarginContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.007
+anchor_right = 1.0
+anchor_bottom = 0.007
+offset_left = -36.0
+offset_top = -0.0500001
+offset_right = -25.0
+offset_bottom = 9.95
+focus_mode = 0
+texture_normal = SubResource("AtlasTexture_pkdd1")
+texture_pressed = SubResource("AtlasTexture_ynv1e")
+texture_hover = SubResource("AtlasTexture_c5wyr")
+texture_disabled = SubResource("AtlasTexture_2i68q")
+texture_focused = SubResource("AtlasTexture_pkdd1")
+
+[node name="btnMax" type="TextureButton" parent="MarginContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.007
+anchor_right = 1.0
+anchor_bottom = 0.007
+offset_left = -24.0
+offset_top = -0.0500001
+offset_right = -13.0
+offset_bottom = 9.95
+focus_mode = 0
+texture_normal = SubResource("AtlasTexture_1lvec")
+texture_pressed = SubResource("AtlasTexture_eexcs")
+texture_hover = SubResource("AtlasTexture_5o64p")
+texture_disabled = SubResource("AtlasTexture_m51ua")
+texture_focused = SubResource("AtlasTexture_1lvec")
+
+[node name="btnClose" type="TextureButton" parent="MarginContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.007
+anchor_right = 1.0
+anchor_bottom = 0.007
+offset_left = -13.0
+offset_top = -0.0500001
+offset_right = -2.0
+offset_bottom = 9.95
+focus_mode = 0
+texture_normal = SubResource("AtlasTexture_mo76p")
+texture_pressed = SubResource("AtlasTexture_plssd")
+texture_hover = SubResource("AtlasTexture_wa8kg")
+texture_disabled = SubResource("AtlasTexture_dfyfj")
+texture_focused = SubResource("AtlasTexture_mo76p")
+
+[node name="btnResize" type="TextureButton" parent="MarginContainer/NinePatchRect"]
+layout_mode = 2
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -8.0
+focus_mode = 0
+action_mode = 0
+shortcut_feedback = false
+shortcut_in_tooltip = false
+texture_normal = ExtResource("4_ynv1e")
+
+[node name="btnMove" type="TextureButton" parent="MarginContainer/NinePatchRect"]
+layout_mode = 2
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = -38.0
+offset_bottom = 11.0
+focus_mode = 0
+action_mode = 0
+shortcut_feedback = false
+shortcut_in_tooltip = false
+
+[node name="formText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 3.0
+offset_top = -3.0
+offset_right = -38.0
+offset_bottom = 10.0
+theme_override_fonts/font = ExtResource("4_pkdd1")
+theme_override_font_sizes/font_size = 16
+text = "FORM 01 Test LOREMierhoiej"
+clip_text = true
+text_overrun_behavior = 1
+uppercase = true
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="button_up" from="MarginContainer/NinePatchRect/btnMin" to="." method="_on_btn_min_button_up"]
+[connection signal="button_up" from="MarginContainer/NinePatchRect/btnMax" to="." method="_on_btn_max_button_up"]
+[connection signal="button_up" from="MarginContainer/NinePatchRect/btnClose" to="." method="_on_btn_close_button_up"]
+[connection signal="button_down" from="MarginContainer/NinePatchRect/btnResize" to="." method="_on_btn_resize_button_down"]
+[connection signal="button_up" from="MarginContainer/NinePatchRect/btnResize" to="." method="_on_btn_resize_button_up"]
+[connection signal="button_down" from="MarginContainer/NinePatchRect/btnMove" to="." method="_on_btn_move_button_down"]
+[connection signal="button_up" from="MarginContainer/NinePatchRect/btnMove" to="." method="_on_btn_move_button_up"]

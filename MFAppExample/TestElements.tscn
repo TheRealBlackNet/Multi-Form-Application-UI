@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceitr2sim1o4r"]
+
+[ext_resource type="Theme" uid="uid://crsbeixkx3oui" path="res://addons/MFAppUI/elements/large_theme.tres" id="1_taa37"]
+
+[node name="TestElements" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_taa37")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 21.0
+offset_right = 131.0
+offset_bottom = 50.0
+text = "Test"
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 61.0
+offset_right = 176.0
+offset_bottom = 90.0
+button_pressed = true
+text = "TEST"
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 215.0
+offset_top = 21.0
+offset_right = 338.0
+offset_bottom = 61.0
+text = "dhsetrhsetr"
+
+[node name="CheckBox" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 103.0
+offset_right = 153.0
+offset_bottom = 138.0
+text = "Test"
+
+[node name="CheckBox2" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 142.0
+offset_right = 156.0
+offset_bottom = 177.0
+button_pressed = true
+text = "Test"
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 15.0
+offset_right = 590.0
+offset_bottom = 139.0
+current_tab = 0
+
+[node name="Panel" type="Panel" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Panel2" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Panel3" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2

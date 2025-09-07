@@ -1,0 +1,144 @@
+[gd_scene load_steps=12 format=3 uid="uid://cwcuw31cc41mo"]
+
+[ext_resource type="Theme" uid="uid://crsbeixkx3oui" path="res://addons/MFAppUI/elements/large_theme.tres" id="1_hco4m"]
+[ext_resource type="Script" uid="uid://b7mhrjp73yiut" path="res://addons/MFAppUI/elements/desktop.gd" id="2_626r6"]
+[ext_resource type="Texture2D" uid="uid://di3jbrm8yqyoh" path="res://addons/MFAppUI/themes/large_element_DESKTOP.png" id="2_aihdw"]
+[ext_resource type="Texture2D" uid="uid://b8nfv6wudbhfi" path="res://addons/MFAppUI/themes/BG_Fun2.png" id="3_626r6"]
+[ext_resource type="PackedScene" uid="uid://cincn4ksuosku" path="res://addons/MFAppUI/elements/FormContainer.tscn" id="4_k64rv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_626r6"]
+atlas = ExtResource("2_aihdw")
+region = Rect2(100, 0, 50, 50)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k64rv"]
+texture = SubResource("AtlasTexture_626r6")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(0, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hco4m"]
+atlas = ExtResource("2_aihdw")
+region = Rect2(300, 0, 50, 50)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aihdw"]
+texture = SubResource("AtlasTexture_hco4m")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(0, 4, 50, 45)
+
+[sub_resource type="SystemFont" id="SystemFont_626r6"]
+font_names = PackedStringArray("Consolas")
+subpixel_positioning = 2
+
+[sub_resource type="FontVariation" id="FontVariation_k64rv"]
+base_font = SubResource("SystemFont_626r6")
+spacing_glyph = -1
+spacing_bottom = -3
+
+[node name="Desktop" type="Control"]
+clip_children = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_hco4m")
+script = ExtResource("2_626r6")
+
+[node name="BG" type="Control" parent="."]
+clip_children = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="BG"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("3_626r6")
+stretch_mode = 6
+
+[node name="FormContainer" parent="BG" instance=ExtResource("4_k64rv")]
+clip_children = 2
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="TaskBar" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -42.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_k64rv")
+
+[node name="StartButton" type="Button" parent="TaskBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -37.0
+offset_right = 88.0
+offset_bottom = -2.0
+text = "   START   "
+
+[node name="TaskFormContainer" type="BoxContainer" parent="TaskBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 90.0
+offset_top = 5.0
+offset_right = -81.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimePanel" type="Panel" parent="TaskBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -78.0
+offset_top = -38.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_aihdw")
+
+[node name="FitTime" type="MarginContainer" parent="TaskBar/TimePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimeDisplay" type="Label" parent="TaskBar/TimePanel/FitTime"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_k64rv")
+theme_override_font_sizes/font_size = 14
+text = "00:00
+06.09.2025"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+ellipsis_char = ""

@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cdnufj382imvr"]
+[gd_scene load_steps=6 format=3 uid="uid://cdnufj382imvr"]
 
 [ext_resource type="Script" uid="uid://edhwlwvvh21g" path="res://MFAppExample/mf_app_debug_main.gd" id="1_6ucb8"]
 [ext_resource type="PackedScene" uid="uid://dfbtknq88qtx3" path="res://addons/MFAppUI/elements/Form.tscn" id="1_d1oey"]
 [ext_resource type="Theme" uid="uid://crsbeixkx3oui" path="res://addons/MFAppUI/elements/large_theme.tres" id="1_mlfrb"]
-[ext_resource type="Texture2D" uid="uid://wbbh5api54vi" path="res://addons/MFAppUI/themes/Icon1_16.png" id="2_06dss"]
-[ext_resource type="PackedScene" uid="uid://cincn4ksuosku" path="res://addons/MFAppUI/elements/FormContainer.tscn" id="2_thg5v"]
 [ext_resource type="PackedScene" uid="uid://cmlvqxr6qqjb4" path="res://addons/MFAppUI/elements/Form_Small.tscn" id="5_06dss"]
+[ext_resource type="PackedScene" uid="uid://cwcuw31cc41mo" path="res://addons/MFAppUI/elements/Desktop.tscn" id="6_mlfrb"]
 
 [node name="MfAppDebugMain" type="Control"]
 custom_minimum_size = Vector2(300, 300)
@@ -15,34 +14,17 @@ offset_right = 1199.0
 offset_bottom = 1199.0
 theme = ExtResource("1_mlfrb")
 script = ExtResource("1_6ucb8")
+metadata/_edit_lock_ = true
+
+[node name="Desktop" parent="." instance=ExtResource("6_mlfrb")]
+layout_mode = 1
+offset_left = 12.0
+offset_top = 153.0
+offset_right = -8.0
+offset_bottom = -9.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(600, 600)
-
-[node name="Icon116" type="Sprite2D" parent="."]
-position = Vector2(346, 19)
-texture = ExtResource("2_06dss")
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 0
-offset_left = 26.0
-offset_top = 39.0
-offset_right = 1161.0
-offset_bottom = 1163.0
-
-[node name="FormContainer" parent="Control" instance=ExtResource("2_thg5v")]
-clip_contents = true
-custom_minimum_size = Vector2(20, 20)
-layout_mode = 1
-anchor_left = -0.022
-anchor_top = -0.034
-anchor_right = 1.045
-anchor_bottom = 1.035
-offset_left = 19.97
-offset_top = 52.216
-offset_right = -56.0751
-offset_bottom = -25.3401
 
 [node name="Form" parent="." instance=ExtResource("1_d1oey")]
 visible = false
@@ -60,31 +42,63 @@ offset_bottom = 552.0
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 122.0
-offset_top = 10.0
-offset_right = 215.0
-offset_bottom = 36.0
+offset_left = 11.0
+offset_top = 68.0
+offset_right = 104.0
+offset_bottom = 94.0
 theme_override_font_sizes/font_size = 10
 text = "ADD FORM"
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 18.0
-offset_top = 11.0
-offset_right = 111.0
-offset_bottom = 37.0
+offset_left = 11.0
+offset_top = 4.0
+offset_right = 104.0
+offset_bottom = 30.0
 theme_override_font_sizes/font_size = 10
 text = "ADD ICON"
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 227.0
-offset_top = 6.0
-offset_right = 320.0
-offset_bottom = 32.0
+offset_left = 14.0
+offset_top = 105.0
+offset_right = 107.0
+offset_bottom = 131.0
 theme_override_font_sizes/font_size = 10
 text = "ADD FORM sm
 "
+
+[node name="Desktop22" parent="." instance=ExtResource("6_mlfrb")]
+visible = false
+layout_mode = 1
+offset_left = 19.0
+offset_top = -1887.0
+offset_right = 348.0
+offset_bottom = -1270.0
+
+[node name="Desktop2" parent="." instance=ExtResource("6_mlfrb")]
+visible = false
+layout_mode = 1
+offset_left = 40.0
+offset_top = -2419.0
+offset_right = 357.0
+offset_bottom = -3142.0
+
+[node name="Desktop4" parent="." instance=ExtResource("6_mlfrb")]
+visible = false
+layout_mode = 1
+offset_left = 2136.0
+offset_top = -1963.0
+offset_right = 1809.0
+offset_bottom = -1310.0
+
+[node name="Desktop3" parent="." instance=ExtResource("6_mlfrb")]
+visible = false
+layout_mode = 1
+offset_left = 1592.0
+offset_top = -3025.0
+offset_right = 857.0
+offset_bottom = -1283.0
 
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

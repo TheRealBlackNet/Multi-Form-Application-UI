@@ -1,9 +1,12 @@
-[gd_scene load_steps=30 format=4 uid="uid://ceitr2sim1o4r"]
+[gd_scene load_steps=33 format=4 uid="uid://ceitr2sim1o4r"]
 
 [ext_resource type="Theme" uid="uid://crsbeixkx3oui" path="res://addons/MFAppUI/elements/large_theme.tres" id="1_taa37"]
 [ext_resource type="Script" uid="uid://vq2dof14jih3" path="res://MFAppExample/test_elements.gd" id="2_22kvv"]
 [ext_resource type="Texture2D" uid="uid://dydingdf6bhl3" path="res://addons/MFAppUI/themes/Basic_Own_Blank.png" id="2_kys8a"]
 [ext_resource type="PackedScene" uid="uid://cincn4ksuosku" path="res://addons/MFAppUI/elements/FormContainer.tscn" id="4_22kvv"]
+[ext_resource type="Texture2D" uid="uid://b3nqyueuaqiig" path="res://addons/MFAppUI/themes/Icon1.png" id="5_sv1rd"]
+[ext_resource type="Texture2D" uid="uid://wbbh5api54vi" path="res://addons/MFAppUI/themes/Icon1_16.png" id="6_6jd5q"]
+[ext_resource type="Texture2D" uid="uid://ccckbk3nimp4r" path="res://addons/MFAppUI/themes/Icon1_32.png" id="7_je0jw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xdjya"]
 texture = ExtResource("2_kys8a")
@@ -872,7 +875,7 @@ cache/0/16/0/glyphs/268435475/size = Vector2(10, 14)
 cache/0/16/0/glyphs/268435475/uv_rect = Rect2(219, 122, 10, 14)
 cache/0/16/0/glyphs/268435475/texture_idx = 0
 
-[sub_resource type="Image" id="Image_ra5xf"]
+[sub_resource type="Image" id="Image_sv1rd"]
 data = {
 "data": PackedByteArray("////AP///wD///8A/P/8APz//AD8//wA////AP7//gD+//4A/v/+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD8//wA/P/8AP///wD+//4A/v/+AP7//gD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A/P/8Avz//E7///+H/v/+rf7//q3+//6H////TP///wL///8A////AP///wD///8A/P/8AP///wD///8A////FP7//pD+//6//v/+v/7//r/+//6//v/+v/7//r/+//6P////FP///wD///8A/P/8APz//AD8//wA/v/+Av7//pD+//6//v/+v/7//r/t7u3Ce31734SFhNz+//6//v/+v/7//o/+//4C/P/8APz//AD8//wA/P/8APz//E7+//6//v/+v/7//r/t7u3CdHR04VtcW+l8fHze/v/+v/7//r/+//6//P/8TPz//AD8//wA////AP///wD///+H/v/+v/7//r/t7u3CdHR04VtcW+l1dXXh7vDuwv7//r/+//6//v/+v/7//oX+//4A/v/+AP7//gD+//4A/v/+rf7//r/+//6/e31731tcW+lnaWfl7vDuwv7//r/+//6//v/+v/7//r/+//6t/v/+AP7//gD+//4A/v/+AP7//q3+//6//v/+v3t9e99bXFvpZ2ln5e3u7cL+//6//v/+v/7//r/+//6//v/+rP7//gD+//4A/v/+AP7//gD+//6H/v/+v/7//r/t7u3CdXV14VtcW+l1dXXh7e7twv7//r/+//6//v/+v/7//oX+//4A/v/+AP///wD///8A////TP7//r/+//6//v/+v+3u7cJ1dXXhW1xb6Xx8fN7+//6//v/+v/7//r/8//xL/P/8APz//AD///8A////AP///wL+//6P/v/+v/7//r/+//6/7e7twnx8fN6EhYTc/v/+v/7//r////+N/P/8Avz//AD8//wA////AP///wD///8A////FP7//o/+//6//v/+v/7//r/+//6//v/+v/7//r////+N////E////wD8//wA/P/8AP///wD///8A////AP///wD+//4C/P/8TP7//oX+//6t/v/+rP7//oX8//xL////Av///wD///8A////APz//AD///8A////AP///wD///8A/P/8APz//AD+//4A/v/+AP7//gD+//4A/P/8APz//AD///8A////AP///wD///8A////AP///wD///8A/P/8APz//AD8//wA/v/+AP7//gD+//4A/v/+APz//AD8//wA/P/8AP///wD///8A////AA=="),
 "format": "RGBA8",
@@ -882,9 +885,9 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_ra5xf"]
-image = SubResource("Image_ra5xf")
+image = SubResource("Image_sv1rd")
 
-[sub_resource type="Image" id="Image_437c8"]
+[sub_resource type="Image" id="Image_6jd5q"]
 data = {
 "data": PackedByteArray("////AP///wD///8A////AP///wD///8A/v/+AP7//gD+//4A/v/+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP7//gD+//4A/v/+AP7//gD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Av///2j+//61/v/+5/7//uf+//60////Zv///wL///8A////AP///wD///8A////AP///wD///8A////G/7//sH+//7//v/+//7//v/+//7//v/+//7//v/+//6/////Gv///wD///8A////AP///wD///8A/v/+Av7//sH+//7//v/+//7//v/r7Ov/T09P/19fX//+//7//v/+//7//r/+//4C////AP///wD///8A////AP///2j+//7//v/+//7//v/r7Ov/QUFB/xoaGv9QUFD//v/+//7//v/+//7/////Zf///wD///8A/v/+AP7//gD+//61/v/+//7//v/r7Ov/QUFB/xoaGv9CQkL/7O3s//7//v/+//7//v/+//7//rL+//4A/v/+AP7//gD+//4A/v/+5/7//v/+//7/T09P/xoaGv8vLy//7O3s//7//v/+//7//v/+//7//v/+//7n/v/+AP7//gD+//4A/v/+AP7//uf+//7//v/+/09PT/8aGhr/Ly8v/+vs6//+//7//v/+//7//v/+//7//v/+5v7//gD+//4A/v/+AP7//gD+//60/v/+//7//v/r7Ov/QkJC/xoaGv9CQkL/6+zr//7//v/+//7//v/+//7//rL+//4A/v/+AP///wD///8A////Zv7//v/+//7//v/+/+vs6/9CQkL/Ghoa/1BQUP/+//7//v/+//7//v////9k////AP///wD///8A////AP///wL+//6//v/+//7//v/+//7/6+zr/1BQUP9eXl7//v/+//7//v/+//69////Av///wD///8A////AP///wD///8A////Gv7//r/+//7//v/+//7//v/+//7//v/+//7//v/+//69////Gf///wD///8A////AP///wD///8A////AP///wD+//4C////Zf7//rL+//7n/v/+5v7//rL///9k/v/+Av///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD+//4A/v/+AP7//gD+//4A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A/v/+AP7//gD+//4A/v/+AP///wD///8A////AP///wD///8A////AA=="),
 "format": "RGBA8",
@@ -894,9 +897,9 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_sv1rd"]
-image = SubResource("Image_437c8")
+image = SubResource("Image_6jd5q")
 
-[sub_resource type="Image" id="Image_sv1rd"]
+[sub_resource type="Image" id="Image_je0jw"]
 data = {
 "data": PackedByteArray("AAAAANPT0wDT09MA09PTANPT0wDT09MA09PTANPT0wDT09MA09PTANPT0wDT09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PT/9PT0//T09P/09PT/9PT0//T09P/09PTANPT0wDT09MA09PTAAAAAAAAAAAA09PTANPT0wDT09MA09PTANPT0//T09P/09PT/9PT0//T09P/09PT/9PT0wDT09MA09PTANPT0wAAAAAAAAAAANPT0wDT09MA09PTANPT0wDT09P/09PT/9PT0//T09P/09PT/9PT0//T09MA09PTANPT0wDT09MAAAAAAAAAAADT09MA09PTANPT0wDT09MA09PTANPT0wDT09MA09PTANPT0wDT09MA09PTANPT0wDT09MA09PTAAAAAAA="),
 "format": "RGBA8",
@@ -906,9 +909,9 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_je0jw"]
-image = SubResource("Image_sv1rd")
+image = SubResource("Image_je0jw")
 
-[sub_resource type="Image" id="Image_6jd5q"]
+[sub_resource type="Image" id="Image_4w803"]
 data = {
 "data": PackedByteArray("////AP///wD///8A/P/8APz//AD8//wA////AP7//gD+//4A/v/+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD8//wA/P/8AP///wD+//4A/v/+AP7//gD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A/P/8Avz//E7///+H/v/+rf7//q3+//6H////TP///wL///8A////AP///wD///8A/P/8AP///wD///8A////FP7//pD+//6//v/+v/7//r/+//6//v/+v/7//r/+//6P////FP///wD///8A/P/8APz//AD8//wA/v/+Av7//pD+//6//v/+v4WFhdx7fXvf7e7twv7//r/+//6//v/+v/7//o/+//4C/P/8APz//AD8//wA/P/8APz//E7+//6//v/+v/7//r97fXvfW1xb6XV1deHt7u3C/v/+v/7//r/+//6//P/8TPz//AD8//wA////AP///wD///+H/v/+v/7//r/+//6/7e7twnV1deFbXFvpdXV14e3u7cL+//6//v/+v/7//oX+//4A/v/+AP7//gD+//4A/v/+rf7//r/+//6//v/+v/7//r/t7u3CZmdm5VtcW+l8fHze/v/+v/7//r/+//6t/v/+AP7//gD+//4A/v/+AP7//q3+//6//v/+v/7//r/+//6/7e7twmZnZuVbXFvpfHx83v7//r/+//6//v/+rP7//gD+//4A/v/+AP7//gD+//6H/v/+v/7//r/+//6/7e7twnR0dOFbXFvpdXV14e7w7sL+//6//v/+v/7//oX+//4A/v/+AP///wD///8A////TP7//r/+//6//v/+v3t9e99bXFvpdXV14e7w7sL+//6//v/+v/7//r/8//xL/P/8APz//AD///8A////AP///wL+//6P/v/+v/7//r+EhYTcfHx83u7w7sL+//6//v/+v/7//r////+N/P/8Avz//AD8//wA////AP///wD///8A////FP7//o/+//6//v/+v/7//r/+//6//v/+v/7//r////+N////E////wD8//wA/P/8AP///wD///8A////AP///wD+//4C/P/8TP7//oX+//6t/v/+rP7//oX8//xL////Av///wD///8A////APz//AD///8A////AP///wD///8A/P/8APz//AD+//4A/v/+AP7//gD+//4A/P/8APz//AD///8A////AP///wD///8A////AP///wD///8A/P/8APz//AD8//wA/v/+AP7//gD+//4A/v/+APz//AD8//wA/P/8AP///wD///8A////AA=="),
 "format": "RGBA8",
@@ -918,9 +921,9 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_hl5ao"]
-image = SubResource("Image_6jd5q")
+image = SubResource("Image_4w803")
 
-[sub_resource type="Image" id="Image_je0jw"]
+[sub_resource type="Image" id="Image_hl5ao"]
 data = {
 "data": PackedByteArray("////AP///wD///8A////AP///wD///8A/v/+AP7//gD+//4A/v/+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP7//gD+//4A/v/+AP7//gD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Av///2j+//61/v/+5/7//uf+//60////Zv///wL///8A////AP///wD///8A////AP///wD///8A////G/7//sH+//7//v/+//7//v/+//7//v/+//7//v/+//6/////Gv///wD///8A////AP///wD///8A/v/+Av7//sH+//7//v/+/11dXf9PT0//6+zr//7//v/+//7//v/+//7//r/+//4C////AP///wD///8A////AP///2j+//7//v/+//7//v9PT0//Ghoa/0JCQv/r7Ov//v/+//7//v/+//7/////Zf///wD///8A/v/+AP7//gD+//61/v/+//7//v/+//7/6+zr/0JCQv8aGhr/QkJC/+vs6//+//7//v/+//7//rL+//4A/v/+AP7//gD+//4A/v/+5/7//v/+//7//v/+//7//v/r7Ov/Li4u/xoaGv9QUFD//v/+//7//v/+//7n/v/+AP7//gD+//4A/v/+AP7//uf+//7//v/+//7//v/+//7/6+zr/y4uLv8aGhr/UFBQ//7//v/+//7//v/+5v7//gD+//4A/v/+AP7//gD+//60/v/+//7//v/+//7/6+zr/0FBQf8aGhr/QkJC/+zt7P/+//7//v/+//7//rL+//4A/v/+AP///wD///8A////Zv7//v/+//7//v/+/09PT/8aGhr/QkJC/+zt7P/+//7//v/+//7//v////9k////AP///wD///8A////AP///wL+//6//v/+//7//v9fX1//UFBQ/+zt7P/+//7//v/+//7//v/+//69////Av///wD///8A////AP///wD///8A////Gv7//r/+//7//v/+//7//v/+//7//v/+//7//v/+//69////Gf///wD///8A////AP///wD///8A////AP///wD+//4C////Zf7//rL+//7n/v/+5v7//rL///9k/v/+Av///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD+//4A/v/+AP7//gD+//4A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A/v/+AP7//gD+//4A/v/+AP///wD///8A////AP///wD///8A////AA=="),
 "format": "RGBA8",
@@ -930,9 +933,9 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_xeytn"]
-image = SubResource("Image_je0jw")
+image = SubResource("Image_hl5ao")
 
-[sub_resource type="Image" id="Image_4w803"]
+[sub_resource type="Image" id="Image_dj40c"]
 data = {
 "data": PackedByteArray("AAAAAAAAAACtra0Ara2tAK2trQCtra0Ara2tH7CwsGSysrJjs7OzHrOzswCzs7MAs7OzALOzswAAAAAAAAAAAAAAAAAAAAAAsLCwALCwsACwsLAAsLCwALCwsGSysrJzsrKyc7GxsWKxsbEAsbGxALGxsQCxsbEAAAAAAAAAAAAAAAAAAAAAALCwsACwsLAAsLCwALCwsACwsLBksrKyc7KysnOzs7Nhs7OzALOzswCzs7MAs7OzAAAAAAAAAAAAAAAAAAAAAACzs7MAs7OzALOzswCzs7MAs7OzHrKysmOysrJjtra2HLa2tgC2trYAtra2ALa2tgAAAAAAAAAAAAAAAAAAAAAAs7OzALOzswCzs7MAs7OzALOzswCysrIAsrKyALa2tgC2trYAtra2ALa2tgC2trYAAAAAAAAAAAAAAAAAAAAAAK2trQCtra0Ara2tAK2trQCtra0AsLCwALKysgCzs7MAs7OzALOzswCzs7MAs7OzAAAAAAAAAAAAAAAAAAAAAACtra0Ara2tAK2trQCtra0Ara2tH7CwsGSysrJjs7OzHrOzswCzs7MAs7OzALOzswAAAAAAAAAAAAAAAAAAAAAAsLCwALCwsACwsLAAsLCwALCwsGSysrJzsrKyc7GxsWKxsbEAsbGxALGxsQCxsbEAAAAAAAAAAAAAAAAAAAAAALCwsACwsLAAsLCwALCwsACwsLBksrKyc7KysnOzs7Nhs7OzALOzswCzs7MAs7OzAAAAAAAAAAAAAAAAAAAAAACzs7MAs7OzALOzswCzs7MAs7OzHrKysmOysrJjsLCwHbCwsACwsLAAsLCwALCwsAAAAAAAAAAAAAAAAAAAAAAAs7OzALOzswCzs7MAs7OzALOzswCysrIAsrKyALCwsACwsLAAsLCwALCwsACwsLAAAAAAAAAAAAAAAAAAAAAAAK2trQCtra0Ara2tAK2trQCtra0AsLCwALKysgCqqqoAqqqqAKqqqgCqqqoAqqqqAAAAAAAAAAAAAAAAAAAAAACtra0Ara2tAK2trQCtra0Ara2tH7CwsGSysrJjqqqqHqqqqgCqqqoAqqqqAKqqqgAAAAAAAAAAAAAAAAAAAAAAsLCwALCwsACwsLAAsLCwALCwsGSysrJzsrKyc7GxsWKxsbEAsbGxALGxsQCxsbEAAAAAAAAAAAAAAAAAAAAAALCwsACwsLAAsLCwALCwsACwsLBksrKyc7KysnOzs7Nhs7OzALOzswCzs7MAs7OzAAAAAAAAAAAAAAAAAAAAAACzs7MAs7OzALOzswCzs7MAs7OzHrKysmOysrJjsLCwHbCwsACwsLAAsLCwALCwsAAAAAAAAAAAAA=="),
 "format": "RGBA8",
@@ -942,9 +945,9 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_x0v6c"]
-image = SubResource("Image_4w803")
+image = SubResource("Image_dj40c")
 
-[sub_resource type="Image" id="Image_hl5ao"]
+[sub_resource type="Image" id="Image_xeytn"]
 data = {
 "data": PackedByteArray("AAAAAAAAAACwsLAAsLCwALCwsACwsLAAsLCwLbOzs5Czs7OPtLS0LLS0tAC0tLQAtLS0ALS0tAAAAAAAAAAAAAAAAAAAAAAAs7OzALOzswCzs7MAs7OzALOzs5CysrKmsrKyprKyso6ysrIAsrKyALKysgCysrIAAAAAAAAAAAAAAAAAAAAAALOzswCzs7MAs7OzALOzswCzs7OQsrKyprKysqaxsbGNsbGxALGxsQCxsbEAsbGxAAAAAAAAAAAAAAAAAAAAAAC0tLQAtLS0ALS0tAC0tLQAtLS0LLOzs4+zs7OPtbW1KbW1tQC1tbUAtbW1ALW1tQAAAAAAAAAAAAAAAAAAAAAAtLS0ALS0tAC0tLQAtLS0ALS0tACzs7MAs7OzALW1tQC1tbUAtbW1ALW1tQC1tbUAAAAAAAAAAAAAAAAAAAAAALCwsACwsLAAsLCwALCwsACwsLAAs7OzALOzswC0tLQAtLS0ALS0tAC0tLQAtLS0AAAAAAAAAAAAAAAAAAAAAACwsLAAsLCwALCwsACwsLAAsLCwLbOzs5Czs7OPtLS0LLS0tAC0tLQAtLS0ALS0tAAAAAAAAAAAAAAAAAAAAAAAs7OzALOzswCzs7MAs7OzALOzs5CysrKmsrKyprKyso6ysrIAsrKyALKysgCysrIAAAAAAAAAAAAAAAAAAAAAALOzswCzs7MAs7OzALOzswCzs7OQsrKyprKysqaxsbGNsbGxALGxsQCxsbEAsbGxAAAAAAAAAAAAAAAAAAAAAAC0tLQAtLS0ALS0tAC0tLQAtLS0LLOzs4+zs7OPsLCwKrCwsACwsLAAsLCwALCwsAAAAAAAAAAAAAAAAAAAAAAAtLS0ALS0tAC0tLQAtLS0ALS0tACzs7MAs7OzALCwsACwsLAAsLCwALCwsACwsLAAAAAAAAAAAAAAAAAAAAAAALCwsACwsLAAsLCwALCwsACwsLAAs7OzALOzswCysrIAsrKyALKysgCysrIAsrKyAAAAAAAAAAAAAAAAAAAAAACwsLAAsLCwALCwsACwsLAAsLCwLbOzs5Czs7OPsrKyK7KysgCysrIAsrKyALKysgAAAAAAAAAAAAAAAAAAAAAAs7OzALOzswCzs7MAs7OzALOzs5CysrKmsrKyprKyso6ysrIAsrKyALKysgCysrIAAAAAAAAAAAAAAAAAAAAAALOzswCzs7MAs7OzALOzswCzs7OQsrKyprKysqaxsbGNsbGxALGxsQCxsbEAsbGxAAAAAAAAAAAAAAAAAAAAAAC0tLQAtLS0ALS0tAC0tLQAtLS0LLOzs4+zs7OPsLCwKrCwsACwsLAAsLCwALCwsAAAAAAAAAAAAA=="),
 "format": "RGBA8",
@@ -954,7 +957,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_5487m"]
-image = SubResource("Image_hl5ao")
+image = SubResource("Image_xeytn")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kys8a"]
 bg_color = Color(0.835073, 0.392063, 0.86305, 1)
@@ -1059,52 +1062,52 @@ zoom = Vector2(2, 2)
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 15.0
-offset_top = 21.0
-offset_right = 131.0
-offset_bottom = 50.0
+offset_left = 633.0
+offset_top = 290.0
+offset_right = 749.0
+offset_bottom = 325.0
 text = "Test"
 
 [node name="CheckButton" type="CheckButton" parent="."]
 layout_mode = 0
-offset_left = 20.0
-offset_top = 61.0
-offset_right = 176.0
-offset_bottom = 90.0
+offset_left = 638.0
+offset_top = 330.0
+offset_right = 794.0
+offset_bottom = 365.0
 button_pressed = true
 text = "TEST"
 
 [node name="LinkButton" type="LinkButton" parent="."]
 layout_mode = 0
-offset_left = 150.0
-offset_top = 12.0
-offset_right = 273.0
-offset_bottom = 52.0
+offset_left = 768.0
+offset_top = 281.0
+offset_right = 891.0
+offset_bottom = 321.0
 text = "dhsetrhsetr"
 
 [node name="CheckBox" type="CheckBox" parent="."]
 layout_mode = 0
-offset_left = 29.0
-offset_top = 103.0
-offset_right = 153.0
-offset_bottom = 138.0
+offset_left = 647.0
+offset_top = 372.0
+offset_right = 771.0
+offset_bottom = 407.0
 text = "Test"
 
 [node name="CheckBox2" type="CheckBox" parent="."]
 layout_mode = 0
-offset_left = 32.0
-offset_top = 142.0
-offset_right = 156.0
-offset_bottom = 177.0
+offset_left = 650.0
+offset_top = 411.0
+offset_right = 774.0
+offset_bottom = 446.0
 button_pressed = true
 text = "Test"
 
 [node name="TabContainer" type="TabContainer" parent="."]
 layout_mode = 0
-offset_left = 184.0
-offset_top = 42.0
-offset_right = 572.0
-offset_bottom = 272.0
+offset_left = 625.0
+offset_top = 22.0
+offset_right = 1013.0
+offset_bottom = 252.0
 current_tab = 1
 
 [node name="Panel" type="Panel" parent="TabContainer"]
@@ -1190,34 +1193,46 @@ offset_bottom = 188.0
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
 offset_left = 17.0
-offset_top = 192.0
+offset_top = 26.0
 offset_right = 133.0
-offset_bottom = 227.0
+offset_bottom = 61.0
 text = "ADD FORM"
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 234.0
-offset_right = 129.0
-offset_bottom = 269.0
+offset_left = 25.0
+offset_top = 67.0
+offset_right = 141.0
+offset_bottom = 102.0
 text = "SMALL"
 
 [node name="FormContainer" parent="." instance=ExtResource("4_22kvv")]
 layout_mode = 1
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 16.0
-offset_top = 284.0
-offset_right = -18.0
-offset_bottom = -19.0
+offset_left = 20.0
+offset_top = 115.0
+offset_right = -14.0
+offset_bottom = -5.0
 
 [node name="CheckButton2" type="CheckButton" parent="."]
 layout_mode = 0
-offset_left = 144.0
-offset_top = 269.0
-offset_right = 216.0
-offset_bottom = 297.0
+offset_left = 832.0
+offset_top = 372.0
+offset_right = 904.0
+offset_bottom = 400.0
+
+[node name="Icon1" type="Sprite2D" parent="."]
+position = Vector2(193, 57)
+texture = ExtResource("5_sv1rd")
+
+[node name="Icon116" type="Sprite2D" parent="."]
+position = Vector2(248, 40)
+texture = ExtResource("6_6jd5q")
+
+[node name="Icon132" type="Sprite2D" parent="."]
+position = Vector2(289, 51)
+texture = ExtResource("7_je0jw")
 
 [connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]
 [connection signal="button_up" from="Button3" to="." method="_on_button_3_button_up"]

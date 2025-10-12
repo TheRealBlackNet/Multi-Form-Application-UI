@@ -14,17 +14,17 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 
 func _on_button_2_button_up() -> void:
 	var frm:Form = FORM.instantiate()
-	form_container.add_form_element(frm)
+	form_container.add_form_element_setMinMoving(frm)
 	frm.position = Vector2(15.0,15.0)
 
 
 func _on_button_3_button_up() -> void:
 	var frm:Form = FORM_SMALL.instantiate()
-	form_container.add_form_element(frm)
+	form_container.add_form_element_setMinMoving(frm)
 	frm.position = Vector2(15.0,15.0)

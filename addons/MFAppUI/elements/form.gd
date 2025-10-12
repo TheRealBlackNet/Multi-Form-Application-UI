@@ -16,6 +16,10 @@ signal  got_closed(me:Form,removed:bool)
 signal  got_hidden(me:Form)
 signal  got_focus(me:Form)
 
+const minSize:Vector2 = Vector2(200,50)
+const minSizeOffSetY:int = minSize.y + 10
+const minSizeOffSetX:int = 15
+
 @export var BehaviorCloseAction:BehaviorClose = BehaviorClose.FREE
 
 @export var BehaviorMoveAction:BehaviorMove = BehaviorMove.MOVE
@@ -34,6 +38,7 @@ var __MouseOffsetStart:Vector2 = Vector2.ZERO
 var __last_position_small:Vector2 = Vector2.ZERO
 var __last_size_small:Vector2 = Vector2.ZERO
 var __current_mode:FormState = FormState.NORMAL
+
 
 @onready var nine_patch_rect_max: NinePatchRect = $NinePatchRectMax
 @onready var nine_patch_rect_min: NinePatchRect = $NinePatchRectMin
@@ -188,9 +193,11 @@ func _toMaxForm():
 	self.size = self.get_parent_control().size
 	self.position = Vector2(0,0)
 
+
 func _toMinForm():
-	self.size = Vector2(200,50)
-	self.position = Vector2(15, self.get_parent_control().size.y-60)
+	self.size = Vector2(minSize.x,minSize.y)
+	self.position = Vector2(minSizeOffSetX,\
+		self.get_parent_control().size.y-minSizeOffSetY)
 
 
 func _stateFromTo(current:FormState, next:FormState):

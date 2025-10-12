@@ -1,11 +1,11 @@
 extends Control
 class_name DesktopContainer
 
-@onready var icons: GridContainer = $BG/Icons
 @onready var form_container: FormContainer = $BG/FormContainer
 
 func add_form_element(frm:Form):
 	form_container.add_form_element(frm)
+	#form_container.add_form_element_setMinMoving(frm)
 
 func add_icon_element(ico:Icon):
 	form_container.add_icon_element(ico)

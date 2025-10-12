@@ -68,8 +68,8 @@ texture = ExtResource("3_626r6")
 stretch_mode = 6
 
 [node name="FormContainer" parent="BG" instance=ExtResource("4_k64rv")]
-clip_children = 2
 layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = 0.0

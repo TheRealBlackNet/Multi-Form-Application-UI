@@ -4,8 +4,8 @@ const FORM = preload("res://addons/MFAppUI/elements/Form.tscn")
 const ICON = preload("res://addons/MFAppUI/elements/Icon.tscn")
 const FORM_SMALL = preload("res://addons/MFAppUI/elements/Form_Small.tscn")
 
-
 @onready var desktop: DesktopContainer = $Desktop
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.

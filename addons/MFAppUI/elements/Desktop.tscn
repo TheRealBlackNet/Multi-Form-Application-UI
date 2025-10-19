@@ -97,15 +97,15 @@ offset_right = 88.0
 offset_bottom = -2.0
 text = "   START   "
 
-[node name="TaskFormContainer" type="BoxContainer" parent="TaskBar"]
+[node name="TaskMinAppContainer" type="HBoxContainer" parent="TaskBar"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 90.0
-offset_top = 5.0
+offset_top = 3.0
 offset_right = -81.0
-offset_bottom = -3.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 

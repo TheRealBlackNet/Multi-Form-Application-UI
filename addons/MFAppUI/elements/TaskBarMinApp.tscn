@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://nvlrouowg7oj"]
+
+[ext_resource type="Texture2D" uid="uid://c06g1tkpd727d" path="res://addons/MFAppUI/themes/TaskBar_App_MinForm.png" id="1_cwxjo"]
+[ext_resource type="Script" uid="uid://d0qsypaylw0s" path="res://addons/MFAppUI/elements/task_bar_min_app.gd" id="1_y1t8h"]
+
+[node name="TaskBarMinApp" type="Control"]
+custom_minimum_size = Vector2(90, 38)
+layout_mode = 3
+anchor_right = 0.075
+anchor_bottom = 0.032
+offset_right = -90.0
+offset_bottom = -38.4
+tooltip_text = "MEEP"
+script = ExtResource("1_y1t8h")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cwxjo")
+region_rect = Rect2(0, -1, 50, 51)
+patch_margin_left = 3
+patch_margin_top = 4
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="formText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 3.0
+offset_top = 6.0
+offset_right = -3.0
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 16
+text = "FORM 01 Test App .EXE .Test"
+clip_text = true
+text_overrun_behavior = 1
+uppercase = true

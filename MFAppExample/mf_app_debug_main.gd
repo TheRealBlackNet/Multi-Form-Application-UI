@@ -4,6 +4,11 @@ const FORM = preload("res://addons/MFAppUI/elements/Form.tscn")
 const ICON = preload("res://addons/MFAppUI/elements/Icon.tscn")
 const FORM_SMALL = preload("res://addons/MFAppUI/elements/Form_Small.tscn")
 
+var NAME_1 := ["","einfach ","pur ","wertvoll ","selten ","refined ","aufbereitet "]
+var NAME_2 := ["Holz","Stein", "Erz", "Kristall"]
+
+@onready var check_moving: CheckButton = $checkMoving
+@onready var check_resize: CheckButton = $checkResize
 @onready var desktop: DesktopContainer = $Desktop
 
 # Called when the node enters the scene tree for the first time.
@@ -17,7 +22,14 @@ func _process(_delta: float) -> void:
 
 
 func _on_button_button_up() -> void:
-	var frm:Form = FORM.instantiate()
+	var frm:Form # = FORM.instantiate()
+	
+	var n = NAME_1.pick_random() + NAME_2.pick_random()
+	var a = Form.BehaviorMove.MOVE if check_moving.button_pressed else Form.BehaviorMove.FIXED
+	var b = Form.BehaviorMinMax.RESIZE if check_resize.button_pressed else Form.BehaviorMinMax.FIXED
+	
+	frm = Form.create(n, Form.BehaviorClose.FREE,a, b, b, FORM.instantiate())
+	
 	desktop.add_form_element(frm)
 	frm.position = Vector2(15.0,15.0)
 	

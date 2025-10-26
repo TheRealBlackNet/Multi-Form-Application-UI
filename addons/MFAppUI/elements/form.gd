@@ -26,8 +26,6 @@ const minSizeOffSetX:int = 15
 @export var BehaviorResizeAction:BehaviorMinMax = BehaviorMinMax.RESIZE
 @export var BehaviorMinMaxAction:BehaviorMinMax = BehaviorMinMax.RESIZE
 
-
-
 @export var min_size:Vector2i = Vector2i(60,60)
 @export var max_size:Vector2i = Vector2i(999999,999999)
 
@@ -51,9 +49,31 @@ var __current_mode:FormState = FormState.NORMAL
 @onready var btn_resize: TextureButton = $btnResize
 @onready var form_text: Label = $formText
 
+var textToSet:String
+
+static func create(\
+		argTitle:String,\
+		argBehaviorCloseAction:BehaviorClose,\
+		argBehaviorMove:BehaviorMove,\
+		argBehaviorResizeAction:BehaviorMinMax,\
+		argBehaviorMinMaxAction:BehaviorMinMax,\
+		instance:Node\
+		) -> Form:
+	#argRoot.add_child(instance)
+	
+	instance.textToSet = argTitle
+	instance.BehaviorCloseAction = argBehaviorCloseAction
+	instance.BehaviorMoveAction = argBehaviorMove
+	instance.BehaviorResizeAction = argBehaviorResizeAction
+	instance.BehaviorMinMaxAction = argBehaviorMinMaxAction
+	
+	#argRoot.remove_child(instance)
+	return instance
+
 
 func _ready() -> void:
 	setIconVisibility()
+	form_text.text = textToSet
 
 func setIconVisibility():
 	if BehaviorResizeAction == BehaviorMinMax.RESIZE:
@@ -73,22 +93,24 @@ func setIconVisibility():
 	else:
 		btn_close.show()
 
-func keepSizes(newSize:Vector2)-> void:
+func keepSizes(argNewSize:Vector2)-> Vector2:
 	# not to small
-	if newSize.x < min_size.x:
-		newSize.x = min_size.x
-	if newSize.y < min_size.y:
-		newSize.y = min_size.y
+	if argNewSize.x < min_size.x:
+		argNewSize.x = min_size.x
+	if argNewSize.y < min_size.y:
+		argNewSize.y = min_size.y
 	# not to big
-	if newSize.x > max_size.x:
-		newSize.x = max_size.x
-	if newSize.y > max_size.y:
-		newSize.y = max_size.y
+	if argNewSize.x > max_size.x:
+		argNewSize.x = max_size.x
+	if argNewSize.y > max_size.y:
+		argNewSize.y = max_size.y
 	# max keep it smaller then the screen
-	if newSize.x > self.get_parent_control().size.x:
-		newSize.x = self.get_parent_control().size.x
-	if newSize.y > self.get_parent_control().size.y:
-		newSize.y = self.get_parent_control().size.y
+	if argNewSize.x > self.get_parent_control().size.x:
+		argNewSize.x = self.get_parent_control().size.x
+	if argNewSize.y > self.get_parent_control().size.y:
+		argNewSize.y = self.get_parent_control().size.y
+	
+	return argNewSize
 
 func keepPosition()-> void:
 	if self.position.x < 0:
@@ -105,7 +127,7 @@ func _process(delta: float) -> void:
 	if __resizeToMouse:
 		var mousePos:Vector2 = get_global_mouse_position()
 		var newSize:Vector2 = mousePos - self.global_position
-		keepSizes(newSize)
+		newSize = keepSizes(newSize)
 		self.size = newSize
 	elif __MoveToMouse:
 		var mousePos:Vector2 = get_local_mouse_position()\
@@ -260,3 +282,7 @@ func _stateFromTo(current:FormState, next:FormState):
 	##
 	elif next == FormState.HIDDEN_TASK_TRAY:
 		self.hide()
+
+
+func getTitle() -> String:
+	return form_text.text

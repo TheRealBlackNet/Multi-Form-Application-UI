@@ -42,11 +42,11 @@ offset_bottom = 552.0
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 11.0
-offset_top = 68.0
-offset_right = 104.0
-offset_bottom = 94.0
-theme_override_font_sizes/font_size = 10
+offset_left = 118.0
+offset_top = 4.0
+offset_right = 405.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 28
 text = "ADD FORM"
 
 [node name="Button2" type="Button" parent="."]
@@ -60,10 +60,10 @@ text = "ADD ICON"
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 105.0
-offset_right = 107.0
-offset_bottom = 131.0
+offset_left = 13.0
+offset_top = 39.0
+offset_right = 106.0
+offset_bottom = 65.0
 theme_override_font_sizes/font_size = 10
 text = "ADD FORM sm
 "
@@ -99,6 +99,24 @@ offset_left = 1592.0
 offset_top = -3025.0
 offset_right = 857.0
 offset_bottom = -1283.0
+
+[node name="checkMoving" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 6.0
+offset_right = 596.0
+offset_bottom = 41.0
+button_pressed = true
+text = "Moving"
+
+[node name="checkResize" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 45.0
+offset_right = 597.0
+offset_bottom = 80.0
+button_pressed = true
+text = "Resize"
 
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

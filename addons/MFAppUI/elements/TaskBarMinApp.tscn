@@ -13,6 +13,14 @@ offset_bottom = -38.4
 tooltip_text = "MEEP"
 script = ExtResource("1_y1t8h")
 
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 89.0
+offset_bottom = 37.0
+flat = true
+
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -27,7 +35,7 @@ patch_margin_top = 4
 patch_margin_right = 3
 patch_margin_bottom = 3
 
-[node name="formText" type="Label" parent="."]
+[node name="FormText" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -40,3 +48,5 @@ text = "FORM 01 Test App .EXE .Test"
 clip_text = true
 text_overrun_behavior = 1
 uppercase = true
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
